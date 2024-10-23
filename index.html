@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog para mí mujer❤️</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Estilos personalizados -->
+    <style>
+        body {
+            background-image: url('source/KITY.PNG');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* Evita que la imagen se mueva al hacer scroll */
+        }
+
+        #btn-no {
+            position: absolute;
+            z-index: 9999; /* Siempre encima de todo */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenedor principal -->
+    <div class="container mx-auto mt-10 relative">
+        <!-- Título del blog -->
+        <h1 class="text-center text-4xl font-bold text-purple-900 mb-8">Hola mi niña hermosa ❤️</h1>
+        
+        <!-- Pregunta interactiva -->
+
+        <!-- Modal oculto que se muestra al hacer clic en "Sí" -->
+        <div id="helloKittyModal" class="hidden fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h5 class="text-2xl font-bold mb-4 text-purple-700">¡Te amoooo ❤️!</h5>
+                <p class="mb-4">Espero te haya gustado esta sopresa mi amor lo hice pensando en ti mi princesa hermosa ❤️</p>
+                <button id="closeModal" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">Cerrar</button>
+            </div>
+        </div>
+
+        <!-- Contenedor de las cards (en columna) -->
+        <div class="flex flex-col gap-8 pb-4">
+            <!-- Tarjeta 1 -->
+            <div class="card bg-white p-8 rounded-lg shadow-lg">
+                <img src="https://placekitten.com/600/300" class="rounded mb-6" alt="Post 1">
+                <h5 class="text-3xl font-bold text-purple-800 mb-4">Eres el amor de mi vida ❤️</h5>
+                <p class="text-gray-600 mb-6">Nunca me cansare de decirtelo mi amor eres lo mas hermoso que tengo en este mundo de verdad no se que haria sin ti  eres todo lo que siempre he soñado en toda mi vida y ahora que te tengo no te kelo dejar mi princesa hermosa y bella chula ❤️, eres lo mas lindo que me ha llegado a pasar en mis 20 años de vida y lo unico que quiero que me dure hasta mi ultimo aliento eres lo mas hemrmoso del mundo ❤️</p>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="card bg-white p-8 rounded-lg shadow-lg">
+                <img src="https://placekitten.com/600/300" class="rounded mb-6" alt="Post 2">
+                <h5 class="text-3xl font-bold text-purple-800 mb-4">Eres la mas hermosa del universo ❤️</h5>
+                <p class="text-gray-600 mb-6">Creo que en todo el mundo o el univserso soy el hombre mas afortunado de todos porque tengo a la mujer más hermosa de todas a mi lado amandome mucho sin importar que ❤️, tal vez no sea el mejor novio pero todos los dias sere el mejor para ti, yo no digo intentare o algo asi porque yo se que lo puedo hacer y por eso te digo que seré ❤️ eres mi mas grande amor mi corazon hermoso espero poder pasar muchos años mas contigo bebe hermosa ❤️</p>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="card bg-white p-8 rounded-lg shadow-lg">
+                <img src="https://placekitten.com/600/300" class="rounded mb-6" alt="Post 3">
+                <h5 class="text-3xl font-bold text-purple-800 mb-4">GRACIAS POR ESTE AÑO TAN MARAVILLOSO ❤️</h5>
+                <p class="text-gray-600 mb-6">Se que hemos pasado por muchas cosas mi amor pero lo menos que te puedo decir es gracias por quedarte conmigo en este año tan maravilloso a tu lado este primer aniversario va ser el inicio de muchos mas mi amor, eres la persona mas hermosa de este mundo bebe ❤️❤️ quiero que sepas que te amo demasiado y que para mi eres todo lo hermoso de este mundo❤️, eres la mujer con la que siempre soñaba y ahora que te tengo no te quiero perder mi amor ❤️, estar contigo y a tu lado es sentir que mi sueño se hizo realidad  y la verdad soy el hombre mas afortunado al tenerte mi amor ❤️❤️</p>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mb-10 flex flex-col items-center">
+        <h2 class="text-3xl font-bold text-purple-700 mb-6">¿keles ser mi esposita un año más?❤️</h2>
+        <div class="flex space-x-16"> <!-- Flexbox para los botones -->
+            <button id="btn-si" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded mr-20">Sí</button>
+            <button id="btn-no" class="bg-red-600 text-white font-bold py-2 px-4 rounded">No</button>
+        </div>
+    </div>
+
+
+    <!-- Script para el comportamiento de los botones -->
+    <script>
+        // Mostrar el modal al hacer clic en "Sí"
+        document.getElementById('btn-si').addEventListener('click', function () {
+            document.getElementById('helloKittyModal').classList.remove('hidden');
+        });
+
+        // Cerrar el modal
+        document.getElementById('closeModal').addEventListener('click', function () {
+            document.getElementById('helloKittyModal').classList.add('hidden');
+        });
+
+        // Mover el botón "No" cuando el cursor se acerque
+        const btnNo = document.getElementById('btn-no');
+        
+        btnNo.addEventListener('mouseover', function () {
+            // Obtener las dimensiones de la ventana
+            const windowWidth = window.innerWidth;
+            const windowHeight = window.innerHeight;
+
+            // Generar posiciones aleatorias para mover el botón
+            const randomX = Math.random() * (windowWidth - btnNo.offsetWidth);
+            const randomY = Math.random() * (windowHeight - btnNo.offsetHeight);
+
+            // Cambiar la posición del botón
+            btnNo.style.left = `${randomX}px`;
+            btnNo.style.top = `${randomY}px`;
+        });
+    </script>
+
+</body>
+</html>
