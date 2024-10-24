@@ -20,13 +20,14 @@
         #btn-no {
             position: absolute;
             z-index: 9999; /* Siempre encima de todo */
+            transition: all 0.2s ease; /* Suavizar el movimiento */
         }
     </style>
 </head>
 <body>
 
     <!-- Contenedor principal -->
-    <div class="container mx-auto mt-10 relative">
+    <div class="container mx-auto mt-10 relative px-4">
         <!-- Título del blog -->
         <h1 class="text-center text-4xl font-bold text-purple-900 mb-8">Hola mi niña hermosa ❤️</h1>
         
@@ -42,45 +43,47 @@
         <!-- Contenedor de las cards (en columna) -->
         <div class="flex flex-col gap-8 pb-4 bg-opacity-50">
             <!-- Tarjeta 1 -->
-            <div class="flex bg-white p-4 rounded-lg shadow-lg bg-opacity-50">
-                <img src="/source/image1.jpg" class="w-72 h-96 rounded mb-6" alt="Post 1">
-                <div class="ml-6">
-                    <h5 class="text-3xl font-bold text-purple-800 mb-4">Eres el amor de mi vida ❤️</h5>
-                    <p class="text-gray-900 mb-6 text-2xl">Nunca me cansaré de decírtelo mi amor, eres lo más hermoso que tengo en este mundo. De verdad, no sé qué haría sin ti. Eres todo lo que siempre he soñado en toda mi vida, y ahora que te tengo, no te quiero dejar, mi princesa hermosa y bella chula ❤️. Eres lo más lindo que me ha llegado a pasar en mis 20 años de vida, y lo único que quiero es que me dure hasta mi último aliento. Eres lo más hermoso del mundo ❤️.</p>
+            <div class="flex flex-col md:flex-row bg-white p-4 rounded-lg shadow-lg bg-opacity-50">
+                <img src="/source/image1.jpg" class="w-full md:w-72 h-72 md:h-96 rounded mb-6" alt="Post 1">
+                <div class="ml-0 md:ml-6">
+                    <h5 class="text-xl md:text-3xl font-bold text-purple-800 mb-4">Eres el amor de mi vida ❤️</h5>
+                    <p class="text-gray-900 mb-6 text-lg md:text-2xl">Nunca me cansaré de decírtelo mi amor, eres lo más hermoso que tengo en este mundo. De verdad, no sé qué haría sin ti. Eres todo lo que siempre he soñado en toda mi vida, y ahora que te tengo, no te quiero dejar, mi princesa hermosa y bella chula ❤️. Eres lo más lindo que me ha llegado a pasar en mis 20 años de vida, y lo único que quiero es que me dure hasta mi último aliento. Eres lo más hermoso del mundo ❤️.</p>
                 </div>
             </div>
 
             <!-- Tarjeta 2 -->
-            <div class="flex bg-white p-4 rounded-lg shadow-lg bg-opacity-50">
-                <img src="/source/image2.jpg" class="w-72 h-96 rounded mb-6" alt="Post 2">
-                <div class="ml-6">
-                    <h5 class="text-3xl font-bold text-purple-800 mb-4">Eres la más hermosa del universo ❤️</h5>
-                    <p class="text-gray-900 mb-6 text-2xl">Creo que en todo el mundo o el universo, soy el hombre más afortunado de todos porque tengo a la mujer más hermosa de todas a mi lado, amándome mucho sin importar que ❤️. Tal vez no sea el mejor novio, pero todos los días seré el mejor para ti. No digo que intentaré o algo así porque yo sé que lo puedo hacer, y por eso te digo que seré ❤️. Eres mi más grande amor, mi corazón hermoso. Espero poder pasar muchos años más contigo, bebé hermosa ❤️.</p>
+            <div class="flex flex-col md:flex-row bg-white p-4 rounded-lg shadow-lg bg-opacity-50">
+                <img src="/source/image2.jpg" class="w-full md:w-72 h-72 md:h-96 rounded mb-6" alt="Post 2">
+                <div class="ml-0 md:ml-6">
+                    <h5 class="text-xl md:text-3xl font-bold text-purple-800 mb-4">Eres la más hermosa del universo ❤️</h5>
+                    <p class="text-gray-900 mb-6 text-lg md:text-2xl">Creo que en todo el mundo o el universo, soy el hombre más afortunado de todos porque tengo a la mujer más hermosa de todas a mi lado, amándome mucho sin importar que ❤️. Tal vez no sea el mejor novio, pero todos los días seré el mejor para ti. No digo que intentaré o algo así porque yo sé que lo puedo hacer, y por eso te digo que seré ❤️. Eres mi más grande amor, mi corazón hermoso. Espero poder pasar muchos años más contigo, bebé hermosa ❤️.</p>
                 </div>
             </div>
 
             <!-- Tarjeta 3 -->
-            <div class="flex bg-white p-4 rounded-lg shadow-lg bg-opacity-50">
-                <img src="/source/image3.jpg" class="w-72 h-96 rounded mb-6" alt="Post 3">
-                <div class="ml-6">
-                    <h5 class="text-3xl font-bold text-purple-800 mb-4">GRACIAS POR ESTE AÑO TAN MARAVILLOSO ❤️</h5>
-                    <p class="text-gray-900 mb-6 text-2xl">Sé que hemos pasado por muchas cosas, mi amor, pero lo menos que te puedo decir es gracias por quedarte conmigo en este año tan maravilloso. A tu lado, este primer aniversario va a ser el inicio de muchos más, mi amor. Eres la persona más hermosa de este mundo, bebé ❤️❤️. Quiero que sepas que te amo demasiado y que para mí eres todo lo hermoso de este mundo ❤️. Eres la mujer con la que siempre soñaba, y ahora que te tengo, no te quiero perder, mi amor ❤️. Estar contigo y a tu lado es sentir que mi sueño se hizo realidad, y la verdad, soy el hombre más afortunado al tenerte, mi amor ❤️❤️.</p>
+            <div class="flex flex-col md:flex-row bg-white p-4 rounded-lg shadow-lg bg-opacity-50">
+                <img src="/source/image3.jpg" class="w-full md:w-72 h-72 md:h-96 rounded mb-6" alt="Post 3">
+                <div class="ml-0 md:ml-6">
+                    <h5 class="text-xl md:text-3xl font-bold text-purple-800 mb-4">GRACIAS POR ESTE AÑO TAN MARAVILLOSO ❤️</h5>
+                    <p class="text-gray-900 mb-6 text-lg md:text-2xl">Sé que hemos pasado por muchas cosas, mi amor, pero lo menos que te puedo decir es gracias por quedarte conmigo en este año tan maravilloso. A tu lado, este primer aniversario va a ser el inicio de muchos más, mi amor. Eres la persona más hermosa de este mundo, bebé ❤️❤️. Quiero que sepas que te amo demasiado y que para mí eres todo lo hermoso de este mundo ❤️. Eres la mujer con la que siempre soñaba, y ahora que te tengo, no te quiero perder, mi amor ❤️. Estar contigo y a tu lado es sentir que mi sueño se hizo realidad, y la verdad, soy el hombre más afortunado al tenerte, mi amor ❤️❤️.</p>
                 </div>
             </div>
         </div>
 
         <!-- Contenedor para centrar el iframe -->
-        <div class="flex justify-center">
-            <div class="max-w-2xl w-full h-96"> <!-- Máxima anchura de 2xl y altura fija -->
-                <iframe src="tulip.html" class="w-full h-full border-0" title="Animación de Rosa"></iframe>
-            </div>
-        </div>
+<!-- Contenedor para el iframe -->
+<div class="flex items-center justify-center" style="height: calc(100vh - 100px);"> <!-- Ajusta 100px según lo que necesites -->
+    <div class="max-w-2xl w-full h-full"> <!-- Máxima anchura de 2xl y altura completa -->
+        <iframe src="tulip.html" class="w-full h-full border-0" title="Animación de Rosa"></iframe>
+    </div>
+</div>
+
     </div>
 
     <div class="text-center mb-10 flex flex-col items-center">
         <h2 class="text-3xl font-bold text-purple-700 mb-6">¿keles ser mi esposita un año más?❤️</h2>
-        <div class="flex space-x-16"> <!-- Flexbox para los botones -->
-            <button id="btn-si" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded mr-20">Sí</button>
+        <div class="flex flex-col md:flex-row space-x-0 md:space-x-16"> <!-- Flexbox para los botones -->
+            <button id="btn-si" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded mb-4 md:mb-0">Sí</button>
             <button id="btn-no" class="bg-red-600 text-white font-bold py-2 px-4 rounded">No</button>
         </div>
     </div>
